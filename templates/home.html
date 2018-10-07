@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head_content %}
+    <title>Weather App</title>
+{% endblock %}
+
+{% block container %}
+    <style>
+        #map {
+            height: 400px; /* The height is 400 pixels */
+            width: 100%; /* The width is the width of the web page */
+        }
+    </style>
+    {% if error %}
+        <p class="alert alert-danger mb-4">{{ error }}</p>
+    {% endif %}
+    <h1>Pronostico del clima</h1>
+    <h5>Seleccione una cuidad</h5>
+    <input id="pac-input" type="text" placeholder="Buscar" class="form-control mt-2 col-md-6">
+    <div id="map"></div>
+    <form method="post" class="d-flex flex-column justify-content-center align-items-center">{% csrf_token %}
+        <input type="text" placeholder="Lat" class="d-none" id="lat" name="lat" value="0">
+        <input type="text" placeholder="Lon" class="d-none" id="lon" name="lon" value="0">
+        <button type="submit" class="mt-5 btn btn-primary">Buscar</button>
+    </form>
+    <script>
+        function initAutocomplete() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -33.8688, lng: 151.2195},
+                zoom: 13,
+                disableDefaultUI: true
+            });
+            var input = document.getElementById('pac-input');
+            var searchBox = new google.maps.places.SearchBox(input);
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+            map.addListener('bounds_changed', function () {
+                searchBox.setBounds(map.getBounds());
+            });
+            var markers = [];
+            searchBox.addListener('places_changed', function () {
+                var places = searchBox.getPlaces();
+                if (places.length == 0) {
+                    return;
+                }
+                markers.forEach(function (marker) {
+                    marker.setMap(null);
+                });
+                markers = [];
+                var bounds = new google.maps.LatLngBounds();
+                places.forEach(function (place) {
+                    if (!place.geometry) {
+                        console.log("Returned place contains no geometry");
+                        return;
+                    }
+                    markers.push(new google.maps.Marker({
+                        map: map,
+                        title: place.name,
+                        position: place.geometry.location
+                    }));
+                    document.getElementById("lat").value = (place.geometry.location.lat()).toPrecision(6);
+                    document.getElementById("lon").value = (place.geometry.location.lng()).toPrecision(6);
+                    if (place.geometry.viewport) {
+                        bounds.union(place.geometry.viewport);
+                    } else {
+                        bounds.extend(place.geometry.location);
+                    }
+                });
+                map.fitBounds(bounds);
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdmosu9TlxK6d9wcBMwAaED3l0xpjl_oc&libraries=places&callback=initAutocomplete"
+            async defer></script>
+{% endblock %}

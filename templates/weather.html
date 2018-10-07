@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head_content %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Weather App / {{ city_name }}</title>
+{% endblock %}
+
+{% block container %}
+    <h1>{{ main }}</h1>
+    <h2>{{ description }}</h2>
+    <img src="{{ icon }}" alt="">
+    <h2><i class="fas fa-thermometer"></i> {{ temp }} °C</h2>
+    <h2>{{ country }}</h2>
+    <h2>{{ city_name }}</h2>
+{% endblock %}
