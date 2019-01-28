@@ -1,0 +1,9 @@
+body {
+    background-image: url("../img/background.png");
+    background-repeat: repeat;
+}
+
+#map {
+    height: 400px;
+    width: 500px;
+}
