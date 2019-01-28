@@ -18,10 +18,10 @@
         </div>
         <div id="map"></div>
         <div class="btn-group m-2" role="group">
-            <button class="btn btn-secondary" id="bogota">Bogota</button>
-            <button type="button" class="btn btn-secondary">Tokyo</button>
-            <button type="button" class="btn btn-secondary">Paris</button>
-            <button type="button" class="btn btn-secondary">washington</button>
+            <button type="button" class="btn btn-secondary" id="bogota">Bogota</button>
+            <button type="button" class="btn btn-secondary" id="tokyo">Tokyo</button>
+            <button type="button" class="btn btn-secondary" id="paris">Paris</button>
+            <button type="button" class="btn btn-secondary" id="washington">washington</button>
         </div>
         <form method="post" class="d-flex flex-column justify-content-center align-items-center">
             {% csrf_token %}
@@ -38,6 +38,8 @@
             <button type="submit" class="mt-1 btn btn-primary">Buscar</button>
         </form>
     </d>
+{% endblock %}
+{% block js %}
     <script src="{% static 'js/scripts.js' %}"></script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdmosu9TlxK6d9wcBMwAaED3l0xpjl_oc&callback=initMap">
