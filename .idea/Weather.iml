@@ -6,7 +6,7 @@
         <option name="rootFolder" value="$MODULE_DIR$" />
         <option name="settingsModule" value="Weather/settings/dev.py" />
         <option name="manageScript" value="$MODULE_DIR$/manage.py" />
-        <option name="environment" value="&lt;map&gt;&#10;  &lt;entry&gt;&#10;    &lt;string&gt;SECRET_KEY&lt;/string&gt;&#10;    &lt;string&gt;oi8j&amp;amp;@m#ib10#024)3m33q-v+sw\=c92c1v3kvaz76sj+md36k)&lt;/string&gt;&#10;  &lt;/entry&gt;&#10;&lt;/map&gt;" />
+        <option name="environment" value="&lt;map&gt;&#10;  &lt;entry&gt;&#10;    &lt;string&gt;SECRET_KEY&lt;/string&gt;&#10;    &lt;string&gt;oi8j&amp;amp;@m#ib10#024)3m33q-v+sw\=c92c1v3kvaz76sj+md36k)&lt;/string&gt;&#10;  &lt;/entry&gt;&#10;  &lt;entry&gt;&#10;    &lt;string&gt;WEATHER_API_KEY&lt;/string&gt;&#10;    &lt;string&gt;6697b63dea7aa12280afbb7087640af5&lt;/string&gt;&#10;  &lt;/entry&gt;&#10;&lt;/map&gt;" />
       </configuration>
     </facet>
   </component>
