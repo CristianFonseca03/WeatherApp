@@ -7,9 +7,7 @@ from urllib.request import urlopen
 import json
 import pytemperature
 import os
-import goslate
 
-gs = goslate.Goslate()
 
 
 def start_view(request):
@@ -22,6 +20,11 @@ def start_view(request):
         return redirect('weather', coordinates=lat + ',' + lon)
     return render(request, 'home.html')
 
+def get_day_status(icon):
+    status = False
+    if "n" in icon:
+        status = True
+    return status
 
 def weather(request, coordinates):
     x = coordinates.split(',')
@@ -32,20 +35,33 @@ def weather(request, coordinates):
     code = data['weather'][0]['id']
     main = data['weather'][0]['main']
     temp = data['main']['temp']
+    icon_code = data['weather'][0]["icon"]
     temp2c = pytemperature.k2c(temp)
-    country = data['sys']['country']
+    try:
+        country = data['sys']['country']
+    except KeyError:
+        country = "NN"
     city_name = data['name']
     template = 'weather.html'
     icons = json.loads(open(os.path.join(BASE_DIR, '../static/icons.json')).read())
-    icon = icons[str(code)]['icon']
+    if get_day_status(icon_code):
+        status="night"
+        icon = icons[str(code)]['icon_night']
+    else:
+        icon = icons[str(code)]['icon_day']
+        status="day"
     description = icons[str(code)]['description_es']
-    main_es = gs.translate(str(main), 'es')
+    try:
+        main_es = icons["descriptions"][main]
+    except KeyError:
+        main_es=main
     context = {
         'main': main_es,
         'temp': int(temp2c),
         'country': country,
         'city_name': city_name,
         'icon': icon,
-        'description': description
+        'description': description,
+        'status':status
     }
     return render(request, template, context)

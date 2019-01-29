@@ -8,10 +8,16 @@
 {% endblock %}
 
 {% block container %}
-    <i id="icon" class="wi wi-day-{{ icon }} m-5"></i>
-    <h1>{{ main }}</h1>
-    <h2>{{ description }}</h2>
-    <h2><i class="fas fa-thermometer"></i> {{ temp }} °C</h2>
-    <h2>{{ country }}</h2>
-    <h2>{{ city_name }}</h2>
+    <div class="container d-flex flex-column align-items-center">
+        <div id="wallpaper">
+            <i id="icon" class="wi {{ icon }} m-5"></i>
+        </div>
+
+        <h1>{{ main }}</h1>
+        <h2>{{ description }}</h2>
+        <h2><i class="fas fa-thermometer"></i> {{ temp }} °C</h2>
+        <h2>{{ country }}</h2>
+        <h2>{{ city_name }}</h2>
+        <h2>{{ status }}</h2>
+    </div>
 {% endblock %}

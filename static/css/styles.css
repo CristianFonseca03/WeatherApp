@@ -11,3 +11,9 @@ body {
 #icon{
     font-size: 100px;
 }
+
+#wallpaper{
+    background-image: url("../img/day.jpg");
+    height: 100%;
+    width: 100%;
+}

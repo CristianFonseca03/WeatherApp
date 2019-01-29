@@ -1,23 +1,40 @@
 {
+  "descriptions":{
+    "Clear sky":"Cielo Despejado",
+    "Few clouds":"Pocas nubes",
+    "Scattered clouds":"Nubes dispersas",
+    "Broken clouds":"Muy nublado",
+    "Shower rain":"Aguacero",
+    "Rain":"Lluvia",
+    "Thunderstorm":"Tormenta",
+    "Snow":"Nieve",
+    "Mist":"Niebla",
+    "Clear":"Despejado",
+    "Clouds":"Nubes"
+  },
   "200": {
     "label": "thunderstorm with light rain",
     "description_es": "tormenta con lluvia ligera",
-    "icon": "storm-showers"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "201": {
     "label": "thunderstorm with rain",
     "description_es": "tormenta con lluvia",
-    "icon": "storm-showers"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "202": {
     "label": "thunderstorm with heavy rain",
     "description_es": "tormenta con fuertes lluvias",
-    "icon": "storm-showers"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "210": {
     "label": "light thunderstorm",
     "description_es": "tormenta con truenos",
-    "icon": "storm-showers"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "211": {
     "label": "thunderstorm",
@@ -27,341 +44,409 @@
   "212": {
     "label": "heavy thunderstorm",
     "description_es": "tormenta fuerte",
-    "icon": "thunderstorm"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "221": {
     "label": "ragged thunderstorm",
     "description_es": "tormenta electrica",
-    "icon": "thunderstorm"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "230": {
     "label": "thunderstorm with light drizzle",
     "description_es": "tormenta con llovizna ligera",
-    "icon": "storm-showers"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "231": {
     "label": "thunderstorm with drizzle",
     "description_es": "tormenta con llovizna",
-    "icon": "storm-showers"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "232": {
     "label": "thunderstorm with heavy drizzle",
     "description_es": "tormenta con llovizna fuerte",
-    "icon": "storm-showers"
+    "icon_day": "wi-storm-showers",
+    "icon_night": "wi-storm-showers"
   },
   "300": {
     "label": "light intensity drizzle",
     "description_es": "tormenta con lluvias intensas",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "301": {
     "label": "drizzle",
     "description_es": "llovizna",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "302": {
     "label": "heavy intensity drizzle",
     "description_es": "llovizna de gran intensidad",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "310": {
     "label": "light intensity drizzle rain",
     "description_es": "llovizna de intensidad ligera",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "311": {
     "label": "drizzle rain",
     "description_es": "llovizna",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "312": {
     "label": "heavy intensity drizzle rain",
     "description_es": "lluvia fuerte",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "313": {
     "label": "shower rain and drizzle",
     "description_es": "lluvia fuerte",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "314": {
     "label": "heavy shower rain and drizzle",
     "description_es": "lluvia fuerte",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "321": {
     "label": "shower drizzle",
     "description_es": "llovizna ligera",
-    "icon": "sprinkle"
+    "icon_day": "wi-sprinkle",
+    "icon_night": "wi-sprinkle"
   },
   "500": {
     "label": "light rain",
     "description_es": "lluvia ligera",
-    "icon": "rain"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "501": {
     "label": "moderate rain",
     "description_es": "lluvia moderada",
-    "icon": "rain"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "502": {
     "label": "heavy intensity rain",
     "description_es": "lluvia intensa",
-    "icon": "rain"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "503": {
     "label": "very heavy rain",
     "description_es": "lluvias muy intensas",
-    "icon": "rain"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "504": {
     "label": "extreme rain",
     "description_es": "lluvia extrema",
-    "icon": "rain"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "511": {
     "label": "freezing rain",
     "description_es": "lluvia con frio",
-    "icon": "rain-mix"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "520": {
     "label": "light intensity shower rain",
     "description_es": "lluvia intensa con posibilidades de rayos",
-    "icon": "showers"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "521": {
     "label": "shower rain",
     "description_es": "lluvia ligera",
-    "icon": "showers"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "522": {
     "label": "heavy intensity shower rain",
     "description_es": "lluvia ligera",
-    "icon": "showers"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "531": {
     "label": "ragged shower rain",
     "description_es": "lluvia ligera",
-    "icon": "showers"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-rain"
   },
   "600": {
     "label": "light snow",
     "description_es": "nieve ligera",
-    "icon": "snow"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "601": {
     "label": "snow",
     "description_es": "nieve",
-    "icon": "snow"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "602": {
     "label": "heavy snow",
     "description_es": "nieve fuerte",
-    "icon": "snow"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "611": {
     "label": "sleet",
     "description_es": "nieve con lluvias",
-    "icon": "sleet"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "612": {
     "label": "shower sleet",
     "description_es": "nieve con lluvias",
-    "icon": "sleet"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "615": {
     "label": "light rain and snow",
     "description_es": "lluvia ligera y nieve",
-    "icon": "rain-mix"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "616": {
     "label": "rain and snow",
     "description_es": "lluvia y nieve",
-    "icon": "rain-mix"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "620": {
     "label": "light shower snow",
     "description_es": "lluvia ligera y nieve",
-    "icon": "rain-mix"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "621": {
     "label": "shower snow",
     "description_es": "lluvia y nieve",
-    "icon": "rain-mix"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "622": {
     "label": "heavy shower snow",
     "description_es": "lluvia fuerte y nieve",
-    "icon": "rain-mix"
+    "icon_day": "wi-day-rain",
+    "icon_night": "wi-night-alt-snow"
   },
   "701": {
     "label": "mist",
     "description_es": "niebla",
-    "icon": "sprinkle"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "711": {
     "label": "smoke",
     "description_es": "humo",
-    "icon": "smoke"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "721": {
     "label": "haze",
     "description_es": "calina",
-    "icon": "day-haze"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "731": {
     "label": "sand, dust whirls",
     "description_es": "arena, remolinos de polvo",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "741": {
     "label": "fog",
     "description_es": "niebla",
-    "icon": "fog"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "751": {
     "label": "sand",
     "description_es": "arena",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "761": {
     "label": "dust",
     "description_es": "polvo",
-    "icon": "dust"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "762": {
     "label": "volcanic ash",
     "description_es": "ceniza volcánica",
-    "icon": "smog"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "771": {
     "label": "squalls",
     "description_es": "bichos",
-    "icon": "day-windy"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "781": {
     "label": "tornado",
     "description_es": "tornado",
-    "icon": "tornado"
+    "icon_day": "wi-windy",
+    "icon_night": "wi-windy"
   },
   "800": {
     "label": "clear sky",
     "description_es": "cielo despejado",
-    "icon": "sunny"
+    "icon_day": "wi-day-sunny",
+    "icon_night": "wi-night-clear"
   },
   "801": {
     "label": "few clouds",
     "description_es": "pocas nubes",
-    "icon": "cloudy"
+    "icon_day": "wi-day-cloudy",
+    "icon_night": "wi-night-alt-cloudy"
   },
   "802": {
     "label": "scattered clouds",
     "description_es": "nubes dispersas",
-    "icon": "cloudy"
+    "icon_day": "wi-day-cloudy",
+    "icon_night": "wi-night-alt-cloudy"
   },
   "803": {
     "label": "broken clouds",
     "description_es": "nubes dispersas",
-    "icon": "cloudy"
+    "icon_day": "wi-day-cloudy",
+    "icon_night": "wi-night-alt-cloudy"
   },
   "804": {
     "label": "overcast clouds",
     "description_es": "nubes cubiertas",
-    "icon": "cloudy"
+    "icon_day": "wi-day-cloudy",
+    "icon_night": "wi-night-alt-cloudy"
   },
   "900": {
     "label": "tornado",
     "description_es": "tornado",
-    "icon": "tornado"
+    "icon_day": "wi-tornado",
+    "icon_night": "wi-tornado"
   },
   "901": {
     "label": "tropical storm",
     "description_es": "tormenta tropical",
-    "icon": "hurricane"
+    "icon_day": "wi-hurricane",
+    "icon_night": "wi-hurricane"
   },
   "902": {
     "label": "hurricane",
     "description_es": "huracan",
-    "icon": "hurricane"
+    "icon_day": "wi-hurricane",
+    "icon_night": "wi-hurricane"
   },
   "903": {
     "label": "cold",
     "description_es": "frio",
-    "icon": "snowflake-cold"
+    "icon_day": "wi-snowflake-cold",
+    "icon_night": "wi-snowflake-cold"
   },
   "904": {
     "label": "hot",
     "description_es": "caliente",
-    "icon": "hot"
+    "icon_day": "wi-hot",
+    "icon_night": "wi-hot"
   },
   "905": {
     "label": "windy",
     "description_es": "ventoso",
-    "icon": "windy"
+    "icon_day": "wi-wind",
+    "icon_night": "wi-wind"
   },
   "906": {
     "label": "hail",
     "description_es": "granizo",
-    "icon": "hail"
+    "icon_day": "wi-day-hail",
+    "icon_night": "wi-night-alt-hail"
   },
   "951": {
     "label": "calm",
     "description_es": "calma",
-    "icon": "sunny"
+    "icon_day": "wi-day-sunny",
+    "icon_night": "wi-day-sunny"
   },
   "952": {
     "label": "light breeze",
     "description_es": "brisa ligera",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "953": {
     "label": "gentle breeze",
     "description_es": "brisa ligera",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "954": {
     "label": "moderate breeze",
     "description_es": "brisa moderada",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "955": {
     "label": "fresh breeze",
     "description_es": "brisa fresca",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "956": {
     "label": "strong breeze",
     "description_es": "brisa fuerte",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "957": {
     "label": "high wind, near gale",
     "description_es": "viento fuerte, cerca de vendaval",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "958": {
     "label": "gale",
     "description_es": "vendaval",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "959": {
     "label": "severe gale",
     "description_es": "vendaval severo",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   },
   "960": {
     "label": "storm",
     "description_es": "tormenta",
-    "icon": "thunderstorm"
+    "icon_day": "wi-day-thunderstorm",
+    "icon_night": "wi-night-alt-thunderstorm"
   },
   "961": {
     "label": "violent storm",
     "description_es": "tormenta violenta",
-    "icon": "thunderstorm"
+    "icon_day": "wi-day-thunderstorm",
+    "icon_night": "wi-night-alt-thunderstorm"
   },
   "962": {
     "label": "hurricane",
     "description_es": "huracan",
-    "icon": "cloudy-gusts"
+    "icon_day": "wi-cloudy-gusts",
+    "icon_night": "wi-cloudy-gusts"
   }
 }
