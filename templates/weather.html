@@ -9,8 +9,17 @@
 
 {% block container %}
     <div class="container d-flex flex-column align-items-center">
-        <div id="wallpaper">
-            <i id="icon" class="wi {{ icon }} m-5"></i>
+
+        <div class="d-flex justify-content-center rounded wallpaper_night col-12">
+            <div class="circle mt-5 mb-5 d-flex justify-content-center flex-column text-center">
+                <i class="wi {{ icon }}"></i>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center rounded wallpaper_day col-12">
+            <div class="circle mt-5 mb-5 d-flex justify-content-center flex-column text-center">
+                <i class="wi {{ icon }}"></i>
+            </div>
         </div>
 
         <h1>{{ main }}</h1>

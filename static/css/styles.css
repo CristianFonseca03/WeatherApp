@@ -8,12 +8,18 @@ body {
     width: 500px;
 }
 
-#icon{
-    font-size: 100px;
+.wallpaper_night{
+    background-color: cornflowerblue;
 }
 
-#wallpaper{
-    background-image: url("../img/day.jpg");
-    height: 100%;
-    width: 100%;
+.wallpaper_day{
+    background-color: greenyellow;
+}
+.circle {
+    font-family: 'Russo One', sans-serif;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: white;
 }
