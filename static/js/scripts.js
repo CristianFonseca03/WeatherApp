@@ -11,9 +11,10 @@ function deleter_markers() {
 }
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 5.69702, lng: 5.69702},
-        zoom: 6
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: {lat: -33, lng: 151},
+        disableDefaultUI: true
     });
     if (navigator.geolocation) {
         deleter_markers();

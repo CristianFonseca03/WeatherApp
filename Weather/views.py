@@ -29,7 +29,7 @@ def get_day_status(icon):
 def weather(request, coordinates):
     x = coordinates.split(',')
     url = 'http://api.openweathermap.org/data/2.5/weather?lat=' + x[0] + '&lon=' + x[
-        1] + '&APPID=AIzaSyD-rw5J8sP6hSnr2JVTR0U_B7n4d4Z2cuI'
+        1] + '&APPID=6697b63dea7aa12280afbb7087640af5'
     response = urlopen(url)
     data = json.load(response)
     code = data['weather'][0]['id']
