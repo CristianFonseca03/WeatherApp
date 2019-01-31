@@ -9,17 +9,20 @@ body {
 }
 
 .wallpaper_night{
-    background-color: cornflowerblue;
+    background-image: url("../img/night.jpg");
 }
 
 .wallpaper_day{
-    background-color: greenyellow;
+    background-image: url("../img/day.jpg");
 }
 .circle {
     font-family: 'Russo One', sans-serif;
-    height: 80px;
-    width: 80px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     font-size: 40px;
     background-color: white;
+}
+.circle>i{
+    font-size: 70px;
 }
