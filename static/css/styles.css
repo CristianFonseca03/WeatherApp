@@ -3,18 +3,23 @@ body {
     background-repeat: repeat;
 }
 
+.badge{
+    font-size: 30px;
+}
+
 #map {
     height: 400px;
     width: 500px;
 }
 
-.wallpaper_night{
+.wallpaper_night {
     background-image: url("../img/night.jpg");
 }
 
-.wallpaper_day{
+.wallpaper_day {
     background-image: url("../img/day.jpg");
 }
+
 .circle {
     font-family: 'Russo One', sans-serif;
     height: 130px;
@@ -23,6 +28,44 @@ body {
     font-size: 40px;
     background-color: white;
 }
-.circle>i{
+
+.circle_card {
+    font-family: 'Russo One', sans-serif;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    font-size: 40px;
+    background-color: white;
+}
+
+.circle_card > i {
+    font-size: 30px;
+}
+
+.circle > i {
     font-size: 70px;
+}
+
+.col-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.info {
+    background-color: white;
+}
+
+.card-w-d {
+    width: 250px;
+    height: 500px;
+    background-image: url("../img/day-c.jpg");
+    background-position: center;
+    background-size: 110%;
+}
+.card-w-n {
+    width: 250px;
+    height: 500px;
+    background-image: url("../img/night-c.jpg");
+    background-position: center;
+    background-size: 110%;
 }

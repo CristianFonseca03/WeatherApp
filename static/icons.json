@@ -10,7 +10,8 @@
     "Snow":"Nieve",
     "Mist":"Niebla",
     "Clear":"Despejado",
-    "Clouds":"Nubes"
+    "Clouds":"Nubes",
+    "Fog":"Niebla"
   },
   "200": {
     "label": "thunderstorm with light rain",
