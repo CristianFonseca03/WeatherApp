@@ -42,12 +42,20 @@
             {% if status == 'night' %}
                 <div class="card-w-n d-flex flex-column align-items-center justify-content-between p-2 rounded">
                     <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
-                        <i class="wi {{ past_climate.3.icon }}"></i>
+                        <i class="wi {{ icon }}"></i>
                     </div>
-                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.3.main }}</h1>
-                    <h1 class="badge badge-light text-capitalize">{{ past_climate.3.day_ }} {{ past_climate.3.day }}</h1>
+                    <h1 class="badge badge-primary text-capitalize">{{ main }}</h1>
+                    <h1 class="badge badge-light text-capitalize">{{ day_ }} {{ today }}</h1>
+                    <h1 class="badge badge-primary text-capitalize"><i class="fas fa-thermometer"></i> {{ temp }}</h1>
+                </div>
+                <div class="card-w-n d-flex flex-column align-items-center justify-content-between p-2 rounded">
+                    <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
+                        <i class="wi {{ past_climate.1.icon }}"></i>
+                    </div>
+                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.1.main }}</h1>
+                    <h1 class="badge badge-light text-capitalize">{{ past_climate.1.day_ }} {{ past_climate.1.day }}</h1>
                     <h1 class="badge badge-primary text-capitalize"><i
-                            class="fas fa-thermometer"></i> {{ past_climate.3.temp }}
+                            class="fas fa-thermometer"></i> {{ past_climate.1.temp }}
                     </h1>
                 </div>
                 <div class="card-w-n d-flex flex-column align-items-center justify-content-between p-2 rounded">
@@ -62,31 +70,31 @@
                 </div>
                 <div class="card-w-n d-flex flex-column align-items-center justify-content-between p-2 rounded">
                     <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
-                        <i class="wi {{ past_climate.1.icon }}"></i>
+                        <i class="wi {{ past_climate.3.icon }}"></i>
                     </div>
-                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.1.main }}</h1>
-                    <h1 class="badge badge-light text-capitalize">{{ past_climate.1.day_ }} {{ past_climate.1.day }}</h1>
+                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.3.main }}</h1>
+                    <h1 class="badge badge-light text-capitalize">{{ past_climate.3.day_ }} {{ past_climate.3.day }}</h1>
                     <h1 class="badge badge-primary text-capitalize"><i
-                            class="fas fa-thermometer"></i> {{ past_climate.1.temp }}
+                            class="fas fa-thermometer"></i> {{ past_climate.3.temp }}
                     </h1>
-                </div>
-                <div class="card-w-n d-flex flex-column align-items-center justify-content-between p-2 rounded">
-                    <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
-                        <i class="wi {{ icon }}"></i>
-                    </div>
-                    <h1 class="badge badge-primary text-capitalize">{{ main }}</h1>
-                    <h1 class="badge badge-light text-capitalize">{{ day_ }} {{ today }}</h1>
-                    <h1 class="badge badge-primary text-capitalize"><i class="fas fa-thermometer"></i> {{ temp }}</h1>
                 </div>
             {% else %}
                 <div class="card-w-d d-flex flex-column align-items-center justify-content-between p-2 rounded">
                     <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
-                        <i class="wi {{ past_climate.3.icon }}"></i>
+                        <i class="wi {{ icon }}"></i>
                     </div>
-                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.3.main }}</h1>
-                    <h1 class="badge badge-light text-capitalize">{{ past_climate.3.day_ }} {{ past_climate.3.day }}</h1>
+                    <h1 class="badge badge-primary text-capitalize">{{ main }}</h1>
+                    <h1 class="badge badge-light text-capitalize">{{ day_ }} {{ today }}</h1>
+                    <h1 class="badge badge-primary text-capitalize"><i class="fas fa-thermometer"></i> {{ temp }}</h1>
+                </div>
+                <div class="card-w-d d-flex flex-column align-items-center justify-content-between p-2 rounded">
+                    <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
+                        <i class="wi {{ past_climate.1.icon }}"></i>
+                    </div>
+                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.1.main }}</h1>
+                    <h1 class="badge badge-light text-capitalize">{{ past_climate.1.day_ }} {{ past_climate.1.day }}</h1>
                     <h1 class="badge badge-primary text-capitalize"><i
-                            class="fas fa-thermometer"></i> {{ past_climate.3.temp }}
+                            class="fas fa-thermometer"></i> {{ past_climate.1.temp }}
                     </h1>
                 </div>
                 <div class="card-w-d d-flex flex-column align-items-center justify-content-between p-2 rounded">
@@ -101,21 +109,13 @@
                 </div>
                 <div class="card-w-d d-flex flex-column align-items-center justify-content-between p-2 rounded">
                     <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
-                        <i class="wi {{ past_climate.1.icon }}"></i>
+                        <i class="wi {{ past_climate.3.icon }}"></i>
                     </div>
-                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.1.main }}</h1>
-                    <h1 class="badge badge-light text-capitalize">{{ past_climate.1.day_ }} {{ past_climate.1.day }}</h1>
+                    <h1 class="badge badge-primary text-capitalize">{{ past_climate.3.main }}</h1>
+                    <h1 class="badge badge-light text-capitalize">{{ past_climate.3.day_ }} {{ past_climate.3.day }}</h1>
                     <h1 class="badge badge-primary text-capitalize"><i
-                            class="fas fa-thermometer"></i> {{ past_climate.1.temp }}
+                            class="fas fa-thermometer"></i> {{ past_climate.3.temp }}
                     </h1>
-                </div>
-                <div class="card-w-d d-flex flex-column align-items-center justify-content-between p-2 rounded">
-                    <div class="circle_card d-flex justify-content-center flex-column text-center m-2">
-                        <i class="wi {{ icon }}"></i>
-                    </div>
-                    <h1 class="badge badge-primary text-capitalize">{{ main }}</h1>
-                    <h1 class="badge badge-light text-capitalize">{{ day_ }} {{ today }}</h1>
-                    <h1 class="badge badge-primary text-capitalize"><i class="fas fa-thermometer"></i> {{ temp }}</h1>
                 </div>
             {% endif %}
         </div>

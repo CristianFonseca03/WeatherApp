@@ -36,11 +36,11 @@ def get_day(day):
     if day == 0:
         return now
     if day == -1:
-        return now - one_day
+        return now + one_day
     if day == -2:
-        return now - two_day
+        return now + two_day
     if day == -3:
-        return now - three_day
+        return now + three_day
 
 
 def weather(request, coordinates):
